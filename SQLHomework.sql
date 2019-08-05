@@ -98,7 +98,7 @@ select last_name, first_name, Employee.emp_no, dept_name
 		on department_employee.dept_no = departments.dept_no
 	where dept_name = 'Sales' or dept_name = 'Devlopment' 
 
--- 8.)In descending order, list the frequency count of employee last names, i.e., how many employees share each last name.
+-- 8.) ####DONE#### In descending order, list the frequency count of employee last names, i.e., how many employees share each last name.
 Select last_name, count(last_name) from employee 
 Group by last_name
 Order by count(last_name) desc;
